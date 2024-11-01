@@ -1,0 +1,30 @@
+#include<stdio.h>
+int?main()
+{
+	int?a,b,c=0,max,min,i,j,flag=0;
+	scanf("%d?%d",&a,&b);
+	max=a>b?a:b;
+	min=a<b?a:b;
+	for(i=min;i<max+1;i++)
+{
+	for(j=2;j<i;j++)
+{
+	if(i%j==0)
+	flag++;
+}
+	if(flag!=0||i==1)
+	flag=0;
+	else
+{
+	printf("%d?",i);
+	c++;
+} 
+	if(c==5)
+{
+	printf("\n");
+	c=0;
+} 
+
+}
+	return?0;
+}
